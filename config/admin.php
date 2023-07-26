@@ -422,6 +422,18 @@ return [
             'user_retriever' => function ($id) {
                 return   \App\Models\User::find($id);
             },
+        ],
+        'ckeditor' => [
+
+            //Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+                'language'      => 'en',
+                'height'        => 500,
+                'contentsCss'   => '/css/frontend-body-content.css',
+            ]
         ]
     ],
 ];

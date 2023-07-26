@@ -66,7 +66,7 @@ class BlogController extends AdminController
         $form = new Form(new Blog());
 
         $form->text('title', __('Title'));
-        $form->text('desc', __('Desc'));
+        $form->ckeditor('desc');
         $form->image('image', __('Image'));
 
         return $form;
